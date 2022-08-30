@@ -28,10 +28,10 @@ int main() {
                     if(d[i]==1&&d[j]==1)
                 printf("job %d, job %d \t\t:Not a feasible solution\n",i, j);
                 else 
-                  printf("job %d, job %d \t\t:job %d, job %d or job %d, job %d\n",i j, i, j, j, i);
+                  printf("job %d, job %d \t\t:job %d, job %d or job %d, job %d\n",i, j, i, j, j, i);
                 }
         }
-  
+    }  
 
   printf("The respective profits are:\n");
      for(j=1;j<=n; j++){
