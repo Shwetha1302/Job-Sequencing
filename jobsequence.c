@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main() {
-    int n, d[10],p[10],s[20],I, j ,top=-1;
+    int n, d[10],p[10],s[20],i, j ,top=-1;
     printf("Enter the number of jobs:\t");
     scanf("%d",&n);
     printf("Enter the deadlines for the %d jobs:\n",n);
@@ -21,14 +21,14 @@ int main() {
         for(j=i+1;j<=n; j++){
             
                 if(d[i]<d[j])
-                printf("job %d, job %d \t\t:job %d, job %d\n”,i ,j , i, j);
+                printf("job %d, job %d \t\t:job %d, job %d\n",i ,j , i, j);
                 else if(d[i]>d[j])
-                  printf("job %d, job %d \t\t:job %d, job %d\n”,i , j, j, i);
+                  printf("job %d, job %d \t\t:job %d, job %d\n",i , j, j, i);
                 else{
                     if(d[i]==1&&d[j]==1)
-                printf("job %d, job %d \t\t:Not a feasible solution\n”,i, j);
+                printf("job %d, job %d \t\t:Not a feasible solution\n",i, j);
                 else 
-                  printf("job %d, job %d \t\t:job %d, job %d or job %d, job %d\n”,i j, i, j, j, i);
+                  printf("job %d, job %d \t\t:job %d, job %d or job %d, job %d\n",i j, i, j, j, i);
                 }
         }
   
